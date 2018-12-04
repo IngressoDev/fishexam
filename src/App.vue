@@ -13,9 +13,9 @@
             <v-list-tile-title>Fragen</v-list-tile-title>
           </v-list-tile>
         </v-list>
-      </v-menu> -->
+      </v-menu>-->
       <v-menu offset-y>
-        <v-btn slot="activator">Prüfung</v-btn>
+        <v-btn slot="activator" flat>Prüfung</v-btn>
         <v-list>
           <v-list-tile to="/exam/questions">
             <v-list-tile-title>Fragen</v-list-tile-title>
