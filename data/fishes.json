@@ -3,6 +3,11 @@
     "id": 1,
     "name": "Bachforelle",
     "sience": "Salmo trutta fario",
+    "info": [
+      "Körper torpedoförmig",
+      "Rückenfärbung olivgrün",
+      "Fettflosse ohne Flossenstrahlen"
+    ],
     "image": "bachforelle.jpg",
     "size": "20-35",
     "copyright": ""
@@ -11,6 +16,12 @@
     "id": 2,
     "name": "Meerforelle",
     "sience": "Salmo trutta trutta",
+    "info": [
+      "Körper torpedoförmig",
+      "Mundspalte reicht bis hinter das Auge",
+      "relativ kleine Schuppen",
+      "Seiten grausilbern, Rücken graugrün"
+    ],
     "image": "meerforelle.jpg",
     "size": "60",
     "copyright": ""
@@ -19,6 +30,10 @@
     "id": 3,
     "name": "Lachs",
     "sience": "Salmo salar",
+    "info": [
+      "Schwanzflosse etwas konkav ausgebuchtet",
+      "Rücken- und Bauchflossen etwa in Körpermitte"
+    ],
     "image": "lachs.jpg",
     "size": "80-100",
     "copyright": ""
@@ -27,6 +42,10 @@
     "id": 4,
     "name": "Regenbogenforelle",
     "sience": "Oncorhynchus mykiss",
+    "info": [
+      "Flanken haben mehr oder weniger breites, rötlich schillerndes Längsband",
+      "Bauchseite ist weißlich"
+    ],
     "image": "regenbogenforelle.jpg",
     "size": "35-50",
     "copyright": ""
@@ -35,6 +54,12 @@
     "id": 5,
     "name": "Bachsaibling",
     "sience": "Salvelinus fontinalis",
+    "info": [
+      "lang gestreckte, nach vorn deutlich zugespitzte Körpergestalt mit hohem Schwanzstiel",
+      "roßer Kopf mit sehr tiefer Mundspalte",
+      "das Maul ist leicht oberständig",
+      "sehr kleine Schuppen"
+    ],
     "image": "bachsaibling.jpg",
     "size": "55",
     "copyright": ""
@@ -43,6 +68,12 @@
     "id": 6,
     "name": "Äsche",
     "sience": "Thymallus thymallus",
+    "info": [
+      "langgestreckter und stromlinienförmiger Körperbau",
+      "Körperflanken sind silbrig gefärbt mit perlmuttartigem Schimmer",
+      "Rücken ist dunkel grau-grün mit noch dunkleren parallel verlaufenden Strichen",
+      "sehr hohe Rückenflosse (Äschenfahne) mit 5 bis 8 dunklen, teilweise unterbrochenen, Streifen"
+    ],
     "image": "aesche.jpg",
     "size": "35-40",
     "copyright": ""
@@ -51,6 +82,13 @@
     "id": 7,
     "name": "Hecht",
     "sience": "Esox lucius",
+    "info": [
+      "lang gestreckter Körper, der im Querschnitt fast rund (walzenförmig) ist",
+      "Bauch ist etwas abgeplattet",
+      "Kopf ist sehr lang, seine Schnauze schnabelartig ausgezogen",
+      "Maul ist oberständig, der Unterkiefer steht hervor",
+      "Rückenflosse ist weit nach hinten verlagert, nah an der Schwanzflosse"
+    ],
     "image": "hecht.jpg",
     "size": "100-150",
     "copyright": ""
@@ -59,6 +97,11 @@
     "id": 8,
     "name": "Aal",
     "sience": "Anguilla anguilla",
+    "info": [
+      "Körperform ähnelt einer Schlange: langgestreckt, rundlich. Am Körperende flacht er seitlich etwas ab",
+      "Rückenflosse, Schwanzflosse und Afterflosse sind zusammengewachsen und bilden einen einheitlichen Flossensaum",
+      "das Maul ist oberständig"
+    ],
     "image": "aal.jpg",
     "size": "60-150",
     "copyright": ""
@@ -67,6 +110,14 @@
     "id": 9,
     "name": "Zährte",
     "sience": "Vimba vimba",
+    "info": [
+      "Körperflanken sind silbrig glänzend und zeigen oft einen leicht rötlichen Schimmer",
+      "Bauchseite ist weißlich bis schwach gelblich-orange gefärbt",
+      "der Kopf ist ziemlich lang",
+      "die Schnauze ist kegelförmig, fleischig und nasenartig vorgezogen und schwärzlich gefärbt",
+      "die Mundspalte ist unterständig und von unten gesehen wie ein Hufeisen geformt",
+      "die Rücken- und die Schwanzflosse der Zährte sind schwarz bis blauschwarz gefärbt"
+    ],
     "image": "zaehrte.jpg",
     "size": "20-30",
     "copyright": ""
@@ -75,6 +126,12 @@
     "id": 10,
     "name": "Rotauge",
     "sience": "Rutilus rutilus",
+    "info": [
+      "besitzt eine leuchtend rote Iris",
+      "das Maul endständig, seine Mundspalte relativ klein",
+      "große Rundschuppen",
+      "die Rücken und Schwanzflosse ist grau"
+    ],
     "image": "rotauge.jpg",
     "size": "15-30",
     "copyright": ""
@@ -83,6 +140,11 @@
     "id": 11,
     "name": "Moderlieschen",
     "sience": "Leucaspius delineatus",
+    "info": [
+      "der Körperbau ist langgestreckt",
+      "entlang der Körperflanken verläuft ein bläulicher Längsstreifen, der manchmal nur schwach sichtbar ist",
+      "das Maul ist stark oberständig"
+    ],
     "image": "moderlieschen.jpg",
     "size": "6",
     "copyright": ""
@@ -91,6 +153,12 @@
     "id": 12,
     "name": "Hasel",
     "sience": "Leuciscus leuciscus",
+    "info": [
+      "mehr oder weniger lang gestreckten und annähernd drehrunden Körper",
+      "die Mundspalte ist klein (reicht nicht zum Augenvorderrand) und leicht unterständig",
+      "große Schuppen",
+      "Augen sind gelblich gefärbt"
+    ],
     "image": "hasel.jpg",
     "size": "15-20",
     "copyright": ""
