@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "category": "A. ALLGEMEINE FISCHKUNDE",
+    "name": "A. ALLGEMEINE FISCHKUNDE",
     "questions": [
       {
         "id": 1,
@@ -431,7 +431,7 @@
   },
   {
     "id": 2,
-    "category": "B. SPEZIELLE FISCHKUNDE",
+    "name": "B. SPEZIELLE FISCHKUNDE",
     "questions": [
       {
         "id": 1,
@@ -1021,7 +1021,7 @@
   },
   {
     "id": 3,
-    "category": "C. GEWÄSSERKUNDE UND FISCHHEGE",
+    "name": "C. GEWÄSSERKUNDE UND FISCHHEGE",
     "questions": [
       {
         "id": 1,
@@ -1643,7 +1643,7 @@
   },
   {
     "id": 4,
-    "category": "D. NATUR- UND TIERSCHUTZ",
+    "name": "D. NATUR- UND TIERSCHUTZ",
     "questions": [
       {
         "id": 1,
@@ -2009,7 +2009,7 @@
   },
   {
     "id": 5,
-    "category": "E. GERÄTEKUNDE",
+    "name": "E. GERÄTEKUNDE",
     "questions": [
       {
         "id": 1,
@@ -2343,7 +2343,7 @@
   },
   {
     "id": 6,
-    "category": "F. GESETZESKUNDE",
+    "name": "F. GESETZESKUNDE",
     "questions": [
       {
         "id": 1,
