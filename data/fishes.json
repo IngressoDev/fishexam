@@ -211,7 +211,7 @@
     "id": 27,
     "name": "Karausche",
     "sience": "Carassius carassius",
-    "image": "karausche.jpg",
+    "image": "karausche.png",
     "size": "20-35",
     "copyright": ""
   },
@@ -235,7 +235,7 @@
     "id": 30,
     "name": "Schmerle",
     "sience": "Barbatula barbatula",
-    "image": "schmerle.jpg",
+    "image": "schmerle.png",
     "size": "8-12",
     "copyright": ""
   },
@@ -243,7 +243,7 @@
     "id": 31,
     "name": "Schlammpeitzger",
     "sience": "Misgurnus fossilis",
-    "image": "schlammpeitzger",
+    "image": "schlammpeitzger.jpg",
     "size": "15-25",
     "copyright": ""
   },
@@ -251,7 +251,7 @@
     "id": 32,
     "name": "Steinbeißer",
     "sience": "Cobitis taenia",
-    "image": "steinbeißer.jpg",
+    "image": "steinbeisser.jpg",
     "size": "9,5-13,5",
     "copyright": ""
   },
@@ -307,7 +307,7 @@
     "id": 39,
     "name": "Mühlkoppe (Groppe)",
     "sience": "Cottus gobio",
-    "image": "muehlkoppe_groppe.jpg",
+    "image": "muehlkoppe.jpg",
     "size": "8-10",
     "copyright": ""
   },
@@ -363,7 +363,7 @@
     "id": 46,
     "name": "Kabeljau (Dorsch)",
     "sience": "Gadus morhua",
-    "image": "kabeljau-dorsch.jpg",
+    "image": "kabeljau.jpg",
     "size": "60-80",
     "copyright": ""
   },
