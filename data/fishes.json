@@ -167,6 +167,12 @@
     "id": 13,
     "name": "Döbel",
     "sience": "Leuciscus cephalus",
+    "info": [
+      "der Körper ist spindelförmig",
+      "besitzt einen großen Kopf mit stumpfer Schnauze, endständigem Maul und tiefer Mundspalte, die fast zu den Augen reicht",
+      "besitzt relativ große, harte, dunkel umrandete Schuppen, die eine netzartige Zeichnung ergeben",
+      "Körperfärbung silbrig bis goldfarben, Rückenbereich etwas dunkler bräunlich bis braun-oliv gefärbt"
+    ],
     "image": "doebel.jpg",
     "size": "30-50",
     "copyright": ""
@@ -175,6 +181,11 @@
     "id": 14,
     "name": "Aland",
     "sience": "Leuciscus idus",
+    "info": [
+      "besitzt große, gelblich gefärbte Augen",
+      "Rücken- und Schwanzflossen sind dunkelgrau",
+      "Rückenbereich ist graublau gefärbt, die Körperflanken sind silbrig und besitzen einen goldenen Schimmer"
+    ],
     "image": "aland.jpg",
     "size": "30-40",
     "copyright": ""
@@ -183,6 +194,11 @@
     "id": 15,
     "name": "Schneider",
     "sience": "Alburnoides bipunctatus",
+    "info": [
+      "Rücken ist blaugrün bis olivbraun gefärbt",
+      "Flanken sind heller und haben einen Messingglanz",
+      "Seitenlinie ist stark nach unten durchgebogen, zum Teil geknickt, oben und unten auffällig schwarz eingefaß"
+    ],
     "image": "schneider.jpg",
     "size": "9-12",
     "copyright": ""
@@ -191,6 +207,10 @@
     "id": 16,
     "name": "Elritze",
     "sience": "Phoxinus phoxinus",
+    "info": [
+      "langgestreckter, fast zylindrischer Körperbau, der ab dem After seitlich etwas abflacht",
+      "die Schuppensind sehr klein, die Seitenlinie reicht meist nur bis zur Körpermitte"
+    ],
     "image": "elritze.jpg",
     "size": "7-14",
     "copyright": ""
@@ -199,6 +219,12 @@
     "id": 17,
     "name": "Rotfeder",
     "sience": "Scardinius erythrophthalmus",
+    "info": [
+      "eiförmigen, hochrückigen, gedrungenen und seitlich abgeflachter Körperbau",
+      "die Rückenflosse beginnt deutlich hinter dem Bauchflossenansatz",
+      "die Schuppen sind groß",
+      "das Maul ist leicht oberständig und die tiefe Mundspalte ist steil nach oben gerichtet"
+    ],
     "image": "rotfeder.jpg",
     "size": "20-30",
     "copyright": ""
@@ -207,6 +233,13 @@
     "id": 18,
     "name": "Schleie",
     "sience": "Tinca tinca",
+    "info": [
+      "gedrungener, kräftiger Körper mit auffallend hohem Schwanzstiel",
+      "der Rücken ist meist dunkelgrün oder -braun",
+      "die Mundspalte ist kurz, endständig und vorstülpbar",
+      "1 Paar kurze Barteln an den Mundwickeln, kleine Augen und eine rötliche Iris",
+      "dicke Schwanzwurzel mit gerade abschließender Schwanzflosse (kaum eingebuchtet)"
+    ],
     "image": "schleie.jpg",
     "size": "30-35",
     "copyright": ""
@@ -215,6 +248,11 @@
     "id": 19,
     "name": "Nase",
     "sience": "Chondrostoma nasus",
+    "info": [
+      "Die Körperflanken sind silbrig und zeigen oft einen metallischen Glanz",
+      "Die Bauchseite ist weißlich bis gelblich gefärbt, die Flossen sind meist gräulich-rot bis gelblich-rot gefärbt",
+      "Die Oberlippe ist zu einem dicken, nasenartigen Fortsatz vergrößer"
+    ],
     "image": "nase.jpg",
     "size": "25-30",
     "copyright": ""
@@ -223,6 +261,11 @@
     "id": 20,
     "name": "Gründling",
     "sience": "Gobio gobio",
+    "info": [
+      "schlanker Körper, fast drehrund",
+      "hat einen abgeflachten, schnauzenartig ausgezogenen Kopf mit großen Augen",
+      "das Maul ist unterständig mit einem Paar kurzer Barteln am Rand des Oberkiefers"
+    ],
     "image": "gruendling.jpg",
     "size": "8-15",
     "copyright": ""
@@ -231,6 +274,11 @@
     "id": 21,
     "name": "Barbe",
     "sience": "Barbus barbus",
+    "info": [
+      "Schnauze lang ausgezogen",
+      "Das rüsselartige Maul ist unterständig und besitzt dicke Lippen",
+      "4 Barteln (2 am Rand der Oberlippe, 2 an den oberen Mundwinkeln)"
+    ],
     "image": "barbe.jpg",
     "size": "30-40",
     "copyright": ""
@@ -239,6 +287,12 @@
     "id": 22,
     "name": "Ukelei",
     "sience": "Alburnus alburnus",
+    "info": [
+      "der Körper ist schlank, langgezogen und seitlich stark abgeflacht",
+      "das Maul ist extrem oberständig, die Mundspalte zeigt steil nach oben, der Unterkiefer nicht verdickt",
+      "die Augen sind auffällig groß",
+      "die Flossen sind farblos und an der Flossenbasis etwas dunkler"
+    ],
     "image": "ukelei.jpg",
     "size": "10-15",
     "copyright": ""
@@ -247,6 +301,12 @@
     "id": 23,
     "name": "Güster",
     "sience": "Blicca bjoerkna",
+    "info": [
+      "der Körperbau ist hochrückig und seitlich stark abgeflacht",
+      "der Körper ist mit relativ großen Schuppen bedeckt",
+      "die großen Augen sind ziemlich weit vorne stehend ",
+      "besitzt eine relativ lange Afterflosse"
+    ],
     "image": "guester.jpg",
     "size": "20",
     "copyright": ""
@@ -255,6 +315,13 @@
     "id": 24,
     "name": "Brasse",
     "sience": "Abramis brama",
+    "info": [
+      "stark seitlich abgeflacht und äußerst hochrückig",
+      "kleiner Kopf mit einer etwas verlängerten Schnauze",
+      "der Körper ist mit sehr großen Schuppen bedeckt",
+      "die Brustflossen reichen bis zum Ansatz der Bauchflossen",
+      "die Flossen sind alle dunkelrau, aber niemals rötlich"
+    ],
     "image": "brasse.jpg",
     "size": "30",
     "copyright": ""
@@ -263,6 +330,12 @@
     "id": 25,
     "name": "Maifisch",
     "sience": "Alosa alosa",
+    "info": [
+      "Rückenflosse ist kurz",
+      "Augen haben unbewegliche Fettlider",
+      "besitzt keine Seitenlinie",
+      "besitzt einen großen schwarzen Fleck am oberen Körperrand, gefolgt von einigen verwaschenen Flecken"
+    ],
     "image": "maifisch.jpg",
     "size": "40",
     "copyright": ""
@@ -271,6 +344,11 @@
     "id": 26,
     "name": "Bitterling",
     "sience": "Rhodeus sericeus",
+    "info": [
+      "der Körper ist hochrückig und seitlich abgeflacht",
+      "besitzt einen kleinen Kopf mit enger, endständiger Mundspalte",
+      "Rücken- und Afterflosse des Bitterlings ist ziemlich lang"
+    ],
     "image": "bitterling.jpg",
     "size": "5-9",
     "copyright": ""
@@ -279,6 +357,12 @@
     "id": 27,
     "name": "Karausche",
     "sience": "Carassius carassius",
+    "info": [
+      "besitzt einen gedrungenen, hochrückigen Körper, der seitlich stark abgeflacht ist",
+      "die Schuppen sind groß, Seitenlinie ist vollständig ausgebildet",
+      "die Rückenfärbung ist dunkel-bräunlich, golden oder olivfarben",
+      "Schwanzwurzel besitzt einen großen und dunklen Fleck (bei alten Tieren oft undeutlich)"
+    ],
     "image": "karausche.png",
     "size": "20-35",
     "copyright": ""
@@ -287,6 +371,13 @@
     "id": 28,
     "name": "Giebel",
     "sience": "Carassius gibelio",
+    "info": [
+      "Mundspalte ist endständig",
+      "besitzen keine Barteln",
+      "der Rücken ist dunkelgrau bis braungrau",
+      "die Schwanzwurzel besitzt keine Flecken",
+      "besitzt eine lange Rückenflosse mit gerader oder konkav eingebuchteter Oberkante"
+    ],
     "image": "giebel.jpg",
     "size": "15-20",
     "copyright": ""
@@ -295,6 +386,13 @@
     "id": 29,
     "name": "Wildkarpfen",
     "sience": "Cyprinus carpio",
+    "info": [
+      "Körper ist fast drehrund, Kopf setzt sich nicht vom Körper ab",
+      "hat ein endständiges, unbezahntes vorstülpbares Maul",
+      "Vier fleischige Bartfäden (2 lange, 2 kürzere), die 2 größeren etwa am Mundwinkel, die zwei kleineren über der Oberlippe",
+      "die große Schwanzflosse ist tief gegabelt und abgerundet",
+      "der Bauchflossenansatz ist hinter der Rückenflosse"
+    ],
     "image": "wildkarpfen.jpg",
     "size": "35-80",
     "copyright": ""
@@ -303,6 +401,11 @@
     "id": 30,
     "name": "Schmerle",
     "sience": "Barbatula barbatula",
+    "info": [
+      "hat 3 Paar mäßig lange Barteln entlang dem Oberkiefer",
+      "die Nasenöffnungen sind röhrenförmig verlängert",
+      "der Rücken und die Seiten sind graubraun mit unregelmäßiger, dunkelbrauner Marmorierung und Fleckung"
+    ],
     "image": "schmerle.png",
     "size": "8-12",
     "copyright": ""
@@ -311,6 +414,12 @@
     "id": 31,
     "name": "Schlammpeitzger",
     "sience": "Misgurnus fossilis",
+    "info": [
+      "Haut ist schleimig",
+      "entlang des Oberkiefers befinden sich 3 Paar Barteln, am Unterkiefer 2 Paar",
+      "Rücken und Bauchflossen sind nach hinten verlagert",
+      "die Schwanzflosse ist abgerundet"
+    ],
     "image": "schlammpeitzger.jpg",
     "size": "15-25",
     "copyright": ""
@@ -319,6 +428,12 @@
     "id": 32,
     "name": "Steinbeißer",
     "sience": "Cobitis taenia",
+    "info": [
+      "Der Rücken ist mit einem, die Körperflanken mit 2 Bändern bedeckt",
+      "Die Augen stehen relativ weit oben",
+      "besitzt 3 Paar Barteln am Oberkiefer",
+      "besitzt einen zweispitzigen Dorn unter dem Auge, den er aufrichten kann"
+    ],
     "image": "steinbeisser.jpg",
     "size": "9,5-13,5",
     "copyright": ""
@@ -327,6 +442,12 @@
     "id": 33,
     "name": "Wels",
     "sience": "Silurus glanis",
+    "info": [
+      "der Kopf ist sehr groß, breit und relativ flach",
+      "Die Maulspalte ist oberständig und sehr breit",
+      "1 Paar sehr lange Barteln seitlich am Oberkiefer und 2 Paar kürzere Barteln an der Kopfunterseite",
+      "seine Rückenflosse ist extrem kurz, die Afterflosse und der Schwanzstiel sind stark verlängert"
+    ],
     "image": "wels.jpg",
     "size": "60-150",
     "copyright": ""
@@ -335,6 +456,11 @@
     "id": 34,
     "name": "Kessler-Grundel",
     "sience": "Ponticola kessleri",
+    "info": [
+      "die Bauchflossen sind zu einer Saugscheibe verwachsen und gelb-orange gefärbt",
+      "Die breite Maulspalte deutet auf eine räuberische Lebensweise hin.",
+      "Als Färbung kleine helle Flecken auf dunklem Grund."
+    ],
     "image": "kessler-grundel.jpg",
     "size": "18-22",
     "copyright": ""
@@ -343,6 +469,12 @@
     "id": 35,
     "name": "Quappe",
     "sience": "Lota lota",
+    "info": [
+      "besitzt einen breiten, flachen Kopf, die Mundspalte ist leicht unterständig und breit",
+      "besitzt 2 sehr kurze Barteln hinter den vorderen Nasenöffnungen und einen langen Bartfaden am Unterkiefer",
+      "die Rückenflosse ist zweigeteilt, die 2. Rückenflosse mindestens 6 x so lang wie die erste",
+      "Afterflosse ist sehr lang, die Schwanzflosse ist abgerundet"
+    ],
     "image": "quappe.jpg",
     "size": "30-60",
     "copyright": ""
@@ -351,6 +483,11 @@
     "id": 36,
     "name": "Flussbarsch",
     "sience": "Perca fluviatilis",
+    "info": [
+      "die Körperflanken sind mit deutlichen 6 bis 9 Querbinden bedeckt",
+      "die Rückenflossen bestehen aus einem hartstrahligen (1. Rückenflosse) und einem deutlich getrennten weichstrahligen Teil.",
+      "Brust- und Bauchflossen sind rötlich gefärbt"
+    ],
     "image": "flussbarsch.jpg",
     "size": "15-30",
     "copyright": ""
@@ -359,6 +496,11 @@
     "id": 37,
     "name": "Zander",
     "sience": "Sander lucioperca",
+    "info": [
+      "der lange Kopf läuft vorne spitz zu und ist auf der Oberseite etwas abgeflacht",
+      "die tiefe und endständige Mundspalte reicht bis hinter die Augen",
+      "bei der geteilten Rückenflosse sind beide Teile ungefähr gleich lang und hoch"
+    ],
     "image": "zander.jpg",
     "size": "40-70",
     "copyright": ""
@@ -367,6 +509,11 @@
     "id": 38,
     "name": "Kaulbarsch",
     "sience": "Gymnocephalus cernuus",
+    "info": [
+      "hat einen gedrungenen und hochrückigen Körper mit stumpfer Schnauze und endständigem Maul",
+      "die Färbung ist grau bis metallisch mit großen unregelmäßigen und immer senkrecht orientierten Flecken",
+      "der weiche Teil der Rückenflosse fällt stark ab"
+    ],
     "image": "kaulbarsch.jpg",
     "size": "12-15",
     "copyright": ""
@@ -375,6 +522,11 @@
     "id": 39,
     "name": "Mühlkoppe (Groppe)",
     "sience": "Cottus gobio",
+    "info": [
+      "hat einen dicken, nach hinten stark verjüngten Körper",
+      "der Kopf ist groß, breit und flach mit sehr weiter, endständiger Mundspalte",
+      "die Brustflossen sind sehr groß, unten mit verstärkten, über die Membran hinausreichenden Strahlen"
+    ],
     "image": "muehlkoppe.jpg",
     "size": "8-10",
     "copyright": ""
@@ -383,6 +535,12 @@
     "id": 40,
     "name": "Dreistachliger Stichling",
     "sience": "Gasterosteus aculeatus",
+    "info": [
+      "im Profil mit fast gerader Bauch- und deutlich gekrümmter Rückenlinie",
+      "Kopf sehr lang, spitz zulaufend, mit großen Augen und kleiner endständiger Mundspalte",
+      "Rückenflosse weit nach hinten gerückt",
+      "2-5 (meist 3) einzeln stehende, aufrichtbarenicht durch eine Flossenhaut verbundene Stacheln"
+    ],
     "image": "dreistachliger-stichling.jpg",
     "size": "5-8",
     "copyright": ""
@@ -391,6 +549,12 @@
     "id": 41,
     "name": "Zwergstichling",
     "sience": "Pungitius pungitius",
+    "info": [
+      "die Augen sind verhältnismäßig groß",
+      "bei älteren Männchen sind die Maulränder wulstig verdickt",
+      "vor der weichstrahligen Rückenflosse befinden sich zwischen acht und elf, meist aber nur neun bis zehn, einklappbare Stacheln",
+      "die Bauchflossen tragen jeweils auch einen kräftigen Stachel"
+    ],
     "image": "zwergstichling.jpg",
     "size": "5-7",
     "copyright": ""
@@ -399,6 +563,11 @@
     "id": 42,
     "name": "Bach-/Flussneunauge",
     "sience": "Lampetra spec.",
+    "info": [
+      "aalförmiger, bleistiftdünner Körper ohne paarige Flossen",
+      "besitzt einen Saugmund",
+      "hat 7 Kiemenöffnungen hinter dem Auge"
+    ],
     "image": "bach-flussneunauge.jpg",
     "size": "10-16, 30-40",
     "copyright": ""
@@ -407,6 +576,12 @@
     "id": 43,
     "name": "Rapfen",
     "sience": "Aspius aspius",
+    "info": [
+      "Rückenfärbung: dunkel olivfarben bis bläulich",
+      "hat einen deutlich ausgeprägten Kiel hinter seiner Afteröffnung, ältere Fische entwickeln oft einen Buckel",
+      "der Kopf ist zugespitzt und besitzt einen verlängerten Unterkiefer mit einem Höcker, der in die Kerbe des Oberkiefers passt",
+      "die Afterflosse ist tief eingebuchtet bis sichelförmig ausgeprägt"
+    ],
     "image": "rapfen.jpg",
     "size": "50-60",
     "copyright": ""
@@ -415,6 +590,12 @@
     "id": 44,
     "name": "Makrele",
     "sience": "Scomber scombrus",
+    "info": [
+      "Der Körper verjüngt sich nach hinten",
+      "über der Seitenlinie verlaufen zahlreiche dunkle, vertikale Streifen, welche oft eine wellenförmige Struktur zeigen",
+      "besitzt relativ große Augen mit einer schwarzen Pupille",
+      "besitzt zwei Rückenflossen, wobei die erste Rückenflosse höher ist als die zweite"
+    ],
     "image": "makrele.jpg",
     "size": "30",
     "copyright": ""
@@ -423,6 +604,11 @@
     "id": 45,
     "name": "Flunder",
     "sience": "Platichthys flesus",
+    "info": [
+      "extrem seitlich abgeflachter Fisch, dessen rechte Seite zur funktionellen Oberseite geworden ist",
+      "der Körper ist extrem hochrückig, fast scheibenförmig",
+      "Rückenflosse und Afterflosse sind extrem lang"
+    ],
     "image": "flunder.jpg",
     "size": "30-40",
     "copyright": ""
@@ -431,6 +617,13 @@
     "id": 46,
     "name": "Kabeljau (Dorsch)",
     "sience": "Gadus morhua",
+    "info": [
+      "Der Körper zeigt ein marmoriertes Muster, der komplette Körper ist mit dunklen Flecken überzogen",
+      "Maulspalte und reicht bis unter seine Augen",
+      "an der Unterlippe sitzt ein langer, kräftiger Bartfaden",
+      "besitzt drei dicht beieinander stehende und abgerundete Rückenflossen",
+      "besitzt zwei Afterflossen"
+    ],
     "image": "kabeljau.jpg",
     "size": "60-80",
     "copyright": ""
@@ -439,6 +632,10 @@
     "id": 47,
     "name": "Nordseeschnäpel",
     "sience": "Coregonus oxyrinchus",
+    "info": [
+      "bei anadromen (wandernden) Arten ist die Schnauze nasenartig verlängert",
+      "Der Rand der Rückenflosse ist eingebuchtet"
+    ],
     "image": "nordseeschnaepel.jpg",
     "size": "50-70",
     "copyright": ""
@@ -447,6 +644,10 @@
     "id": 48,
     "name": "Edelkrebs",
     "sience": "Astacus astacus",
+    "info": [
+      "Der Körper ist meist dunkelbraun bis rotbraun",
+      "Der Kopf- und Rückenpanzer ist spitz auslaufend"
+    ],
     "image": "edelkrebs.jpg",
     "size": "20",
     "copyright": ""
@@ -455,6 +656,10 @@
     "id": 49,
     "name": "Amerikanischer Krebs",
     "sience": "Orconectes limosus",
+    "info": [
+      "Die Scherenoberseite ist oft pelzig behaart",
+      "kräftige seitliche Bedornung im Wangenbereich vor der Nackenfurche"
+    ],
     "image": "amerikanischer-krebs.jpg",
     "size": "12",
     "copyright": ""
