@@ -1,33 +1,19 @@
 <template>
   <div class="training-questions">
-    <v-tabs v-model="categoryTab" @change="changeCategory">
-      <v-tab
-        v-for="(category, index) in categories"
-        :key="`ctab-${category.id}`"
-        :href="`#ctab-${index}`"
-      >{{category.name}}</v-tab>
+    <v-tabs v-model="categoryTab" @change="changeCategory" show-arrows>
+      <v-tab v-for="category in categories" :key="`ctab-${category.id}`">{{category.name}}</v-tab>
     </v-tabs>
     <v-tabs-items v-model="categoryTab">
-      <v-tab-item
-        v-for="(category, iC) in categories"
-        :key="`item-${category.id}`"
-        :value="`ctab-${iC}`"
-      >
-        <v-btn
-          v-for="(question, index) in category.questions"
-          :key="`question-${question.id}`"
-          :class="selection.get(category.id).has(question.id) ? selection.get(category.id).get(question.id) === question.s ? 'green lighten-4 ' : 'red lighten-4' : ''"
-          @click="() => { questionTab = `qtab-${index}`}"
-          tile
-          depressed
-        >{{index + 1}}</v-btn>
+      <v-tab-item v-for="category in categories" :key="`item-${category.id}`">
+        <v-tabs :value="questionTab" @change="next" show-arrows>
+          <v-tab
+            v-for="(question, index) in category.questions"
+            :key="`question-${question.id}`"
+          >{{index + 1}}</v-tab>
+        </v-tabs>
 
         <v-tabs-items v-model="questionTab">
-          <v-tab-item
-            v-for="(question, iQ) in category.questions"
-            :key="`q-item-${question.id}`"
-            :value="`qtab-${iQ}`"
-          >
+          <v-tab-item v-for="(question, iQ) in category.questions" :key="`q-item-${question.id}`">
             <v-card>
               <v-card-title class="subtitle-2">{{question.q}}</v-card-title>
               <v-card-text>
@@ -75,8 +61,8 @@ import ICategory from "@/interfaces/ICategory";
 @Component
 export default class QuestionTraining extends Vue {
   private categories: ICategory[] = [];
-  private categoryTab: string | undefined = undefined;
-  private questionTab: string = "qtab-0";
+  private categoryTab: number = 0;
+  private questionTab: number = 0;
   private selection: Map<number, Map<number, string>> = new Map();
 
   public mounted(): void {
@@ -119,11 +105,11 @@ export default class QuestionTraining extends Vue {
   }
 
   private next(index: number): void {
-    this.questionTab = `qtab-${index}`;
+    this.questionTab = index;
   }
 
   private changeCategory(): void {
-    this.questionTab = "qtab-0";
+    this.questionTab = 0;
   }
 }
 </script>

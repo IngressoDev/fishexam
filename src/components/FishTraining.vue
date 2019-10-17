@@ -1,15 +1,11 @@
 <template>
   <div class="training-fishes">
-    <v-tabs v-model="fishTab" dark show-arrows>
+    <v-tabs :value="fishTab" @change="next" dark show-arrows>
       <v-tabs-slider color="teal lighten-3"></v-tabs-slider>
-      <v-tab
-        v-for="(fish, index) in fishes"
-        :key="`tab-${fish.id}`"
-        :href="`#tab-${index}`"
-      >{{++index}}</v-tab>
+      <v-tab v-for="(fish, index) in fishes" :key="`tab-${fish.id}`">{{++index}}</v-tab>
     </v-tabs>
     <v-tabs-items v-model="fishTab">
-      <v-tab-item v-for="(fish, index) in fishes" :key="`item-${fish.id}`" :value="`tab-${index}`">
+      <v-tab-item v-for="(fish, index) in fishes" :key="`item-${fish.id}`">
         <v-row align="center" justify="center">
           <h1 :class="solutions.has(fish.id) ? '' : 'hidden'">{{fish.name}}</h1>
         </v-row>
@@ -48,13 +44,13 @@
         <v-row align="center" justify="center">
           <v-col cols="12" sm="3" md="2">
             <v-btn
-              @click="() => { next(++index) }"
+              @click="() => { next(index + 1) }"
               :color="solutions.has(fish.id) ? solutions.get(fish.id) ? 'success' : 'error' : ''"
               block
             >Weiter</v-btn>
           </v-col>
           <v-col cols="12" sm="3" md="2">
-            <v-btn @click="() => { random(++index) }" block>Zufall</v-btn>
+            <v-btn @click="random" block>Zufall</v-btn>
           </v-col>
         </v-row>
       </v-tab-item>
@@ -65,12 +61,12 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import axios, { AxiosResponse } from "axios";
-import IFish from '@/interfaces/IFish';
+import IFish from "@/interfaces/IFish";
 
 @Component
 export default class FishTraining extends Vue {
   private fishes: IFish[] = [];
-  private fishTab: string | undefined = undefined;
+  private fishTab: number = 0;
   private solutions = new Map<number, boolean>();
 
   public mounted() {
@@ -89,15 +85,17 @@ export default class FishTraining extends Vue {
   }
 
   private next(index: number): void {
-    if (index > this.fishes.length) {
-      this.fishTab = `tab-${0}`;
-    } else {
-      this.fishTab = `tab-${index}`;
-    }
+    this.fishTab = index;
   }
 
   private random(): void {
-    this.fishTab = `tab-${Math.floor(Math.random() * this.fishes.length)}`;
+    let random: number = 0;
+
+    do {
+      random = Math.floor(Math.random() * this.fishes.length);
+    } while (random === this.fishTab);
+
+    this.fishTab = random;
   }
 }
 </script>
