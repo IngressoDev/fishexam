@@ -37,7 +37,7 @@
 import { Component, Vue } from "vue-property-decorator";
 import axios, { AxiosResponse } from "axios";
 import ICategory from "@/interfaces/ICategory";
-import IQuestion from "../interfaces/IQuestion";
+import IQuestion from "@/interfaces/IQuestion";
 
 @Component
 export default class QuestionExam extends Vue {

@@ -70,12 +70,13 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import axios, { AxiosResponse } from "axios";
+import ICategory from "@/interfaces/ICategory";
 
 @Component
 export default class QuestionTraining extends Vue {
-  private categories = [];
-  private categoryTab = null;
-  private questionTab = "qtab-0";
+  private categories: ICategory[] = [];
+  private categoryTab: string | undefined = undefined;
+  private questionTab: string = "qtab-0";
   private selection: Map<number, Map<number, string>> = new Map();
 
   public mounted(): void {
@@ -83,8 +84,8 @@ export default class QuestionTraining extends Vue {
       .get(
         "https://raw.githubusercontent.com/IngressoDev/fishexam/master/data/questions.json"
       )
-      .then((res: AxiosResponse<IFish>) => {
-        const categoryMap = new Map<number, Map<number, string>>();
+      .then((res: AxiosResponse<ICategory[]>) => {
+        const categoryMap: Map<number, Map<number, string>> = new Map();
 
         for (const category of res.data) {
           categoryMap.set(category.id, new Map<number, string>());
@@ -99,16 +100,16 @@ export default class QuestionTraining extends Vue {
     this.$forceUpdate();
   }
 
-  public getColor(cId: number, qId: number, solution: string, choice: string) {
-    if (this.selection.get(cId).has(qId)) {
+  private getColor(cId: number, qId: number, solution: string, choice: string) {
+    if (this.selection.get(cId)!.has(qId)) {
       if (
-        this.selection.get(cId).get(qId) === solution &&
+        this.selection.get(cId)!.get(qId)! === solution &&
         solution === choice
       ) {
         return "green lighten-4";
       } else if (
-        this.selection.get(cId).get(qId) !== solution &&
-        this.selection.get(cId).get(qId) === choice
+        this.selection.get(cId)!.get(qId)! !== solution &&
+        this.selection.get(cId)!.get(qId)! === choice
       ) {
         return "red lighten-4";
       } else if (solution === choice) {
@@ -123,7 +124,6 @@ export default class QuestionTraining extends Vue {
 
   private changeCategory(): void {
     this.questionTab = "qtab-0";
-    
   }
 }
 </script>
