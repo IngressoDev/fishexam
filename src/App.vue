@@ -1,31 +1,54 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+  <v-app>
+    <v-container>
+      <v-app-bar app>
+        <v-toolbar-title class="headline text-uppercase">
+          <span>Fish</span>
+          <span class="font-weight-light">Exam</span>
+        </v-toolbar-title>
+        <v-spacer></v-spacer>
+        <v-menu offset-y>
+          <template v-slot:activator="{ on }">
+            <v-btn v-on="on" text>Fragen</v-btn>
+          </template>
+          <v-list>
+            <v-list-item to="/questions/training">
+              <v-list-item-title>Lernen</v-list-item-title>
+            </v-list-item>
+            <v-list-item to="/questions/exam">
+              <v-list-item-title>Prüfung</v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+        <v-menu offset-y>
+          <template v-slot:activator="{ on }">
+            <v-btn v-on="on" text>Fische</v-btn>
+          </template>
+          <v-list>
+            <v-list-item to="/fishes/training">
+              <v-list-item-title>Lernen</v-list-item-title>
+            </v-list-item>
+            <!-- <v-list-item to="/fishes/exam">
+              <v-list-item-title>Prüfung</v-list-item-title>
+            </v-list-item> -->
+          </v-list>
+        </v-menu>
+      </v-app-bar>
+
+      <v-content>
+        <router-view />
+      </v-content>
+    </v-container>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
+<script lang="ts">
+import Vue from "vue";
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+export default Vue.extend({
+  name: "App",
+  data: () => ({
+    //
+  })
+});
+</script>
