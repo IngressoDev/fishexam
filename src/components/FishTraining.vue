@@ -2,7 +2,7 @@
   <div class="training-fishes">
     <v-tabs :value="fishTab" @change="next" dark show-arrows>
       <v-tabs-slider color="teal lighten-3"></v-tabs-slider>
-      <v-tab v-for="(fish, index) in fishes" :key="`tab-${fish.id}`">{{++index}}</v-tab>
+      <v-tab v-for="(fish, index) in fishes" :key="`tab-${fish.id}`">{{index + 1}}</v-tab>
     </v-tabs>
     <v-tabs-items v-model="fishTab">
       <v-tab-item v-for="(fish, index) in fishes" :key="`item-${fish.id}`">
@@ -10,24 +10,26 @@
           <h1 :class="solutions.has(fish.id) ? '' : 'hidden'">{{fish.name}}</h1>
         </v-row>
         <v-row align="center" justify="center">
-          <v-tooltip right>
-            <template v-slot:activator="{ on }">
-              <v-img
-                v-on="on"
-                :src="`https://github.com/IngressoDev/fishexam/blob/master/data/images/${fish.image}?raw=true`"
-                aspect-ratio="1"
-                max-width="500"
-                max-height="300"
-                contain
-              ></v-img>
-            </template>
-            <ul>
-              <li v-for="(info, infoIndex) in fish.info" :key="`info-${infoIndex}`">{{info}}</li>
-            </ul>
-          </v-tooltip>
+          <v-img
+            :src="`https://github.com/IngressoDev/fishexam/blob/master/data/images/${fish.image}?raw=true`"
+            aspect-ratio="1"
+            max-width="500"
+            max-height="300"
+            contain
+          ></v-img>
         </v-row>
         <v-row align="center" justify="center">
-          <h1>{{fish.size}} cm</h1>
+          <h1>
+            {{fish.size}} cm
+            <v-tooltip right>
+              <template v-slot:activator="{ on }">
+                <v-icon v-on="on">mdi-alert-circle</v-icon>
+              </template>
+              <ul>
+                <li v-for="(info, infoIndex) in fish.info" :key="`info-${infoIndex}`">{{info}}</li>
+              </ul>
+            </v-tooltip>
+          </h1>
         </v-row>
         <v-row align="center" justify="center">
           <v-col cols="12" sm="6" md="5" lg="4">
@@ -66,15 +68,15 @@ import IFish from "@/interfaces/IFish";
 @Component
 export default class FishTraining extends Vue {
   private fishes: IFish[] = [];
-  private fishTab: number = 0;
-  private solutions = new Map<number, boolean>();
+  private fishTab: number | null = 0;
+  private solutions: Map<number, boolean> = new Map();
 
   public mounted() {
     axios
       .get(
         "https://raw.githubusercontent.com/IngressoDev/fishexam/master/data/fishes.json"
       )
-      .then((res: AxiosResponse<any>) => {
+      .then((res: AxiosResponse<IFish[]>) => {
         this.fishes = res.data;
       });
   }
@@ -91,9 +93,12 @@ export default class FishTraining extends Vue {
   private random(): void {
     let random: number = 0;
 
-    do {
+    while (
+      (random === this.fishTab || this.solutions.has(this.fishes[random].id)) &&
+      this.solutions.size !== this.fishes.length
+    ) {
       random = Math.floor(Math.random() * this.fishes.length);
-    } while (random === this.fishTab);
+    }
 
     this.fishTab = random;
   }

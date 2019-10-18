@@ -7,6 +7,7 @@ import QuestionExam from '@/components/QuestionExam.vue';
 import Fishes from './views/Fishes.vue';
 import FishTraining from '@/components/FishTraining.vue';
 // import ExamFishes from '@/components/TrainingFishes.vue';
+import FishCompare from '@/components/FishCompare.vue';
 
 Vue.use(Router);
 
@@ -52,6 +53,10 @@ export default new Router({
         //   path: 'exam',
         //   component: ExamFishes
         // }
+        {
+          path: 'compare',
+          component: FishCompare
+        }
       ]
     }
   ]

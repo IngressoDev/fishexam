@@ -113,3 +113,9 @@ export default class QuestionTraining extends Vue {
   }
 }
 </script>
+
+<style>
+.v-card__title {
+  word-break: normal !important;
+}
+</style>

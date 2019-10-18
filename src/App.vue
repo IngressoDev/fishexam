@@ -28,17 +28,20 @@
             <v-list-item to="/fishes/training">
               <v-list-item-title>Lernen</v-list-item-title>
             </v-list-item>
+            <v-list-item to="/fishes/compare">
+              <v-list-item-title>Vergleich</v-list-item-title>
+            </v-list-item>
             <!-- <v-list-item to="/fishes/exam">
               <v-list-item-title>Prüfung</v-list-item-title>
-            </v-list-item> -->
+            </v-list-item>-->
           </v-list>
         </v-menu>
       </v-app-bar>
-
-      <v-content>
-        <router-view />
-      </v-content>
     </v-container>
+
+    <v-content>
+      <router-view />
+    </v-content>
   </v-app>
 </template>
 

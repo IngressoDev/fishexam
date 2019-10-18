@@ -1,30 +1,46 @@
 <template>
   <v-container fluid>
-    <div class="d-flex flex-column" v-for="(category, cIndex) in categories" :key="category.id">
-      <h1 class="headline mt-8">{{category.name}}</h1>
-      <div class="d-flex flex-column">
-        <div
-          class="question-row"
+    <v-row v-for="(category, cIndex) in categories" :key="category.id">
+      <v-col cols="12">
+        <v-row>
+          <v-col>
+            <h1 class="headline">{{category.name}}</h1>
+          </v-col>
+        </v-row>
+        <v-radio-group
+          :value="selections.get(`${cIndex}${qIndex}`)"
+          @change="(choice) => { startTimer(); selections.set(`${cIndex}${qIndex}`, choice); }"
           v-for="(question, qIndex) in category.questions"
           :key="question.id"
+          hide-details
         >
-          <v-radio-group
-            :hide-details="true"
-            @change="(choice) => { startTimer(); selections.set(`${cIndex}${qIndex}`, choice); }"
-          >
-            <div class="d-flex flex-row q-items">
-              <div class="d-flex flex-row align-center pa-1" :class="getCssClass(cIndex, qIndex)">
-                <div class="pr-4" style="width: 30px">{{qIndex + 1}}</div>
-                <div>{{question.q}}</div>
+          <v-row class="align-stretch">
+            <v-col class="d-flex" :class="getCssClass(cIndex, qIndex)" cols="12" lg="3">
+              <div class="d-flex align-center">
+                <div class="pl-2 pr-2">{{ qIndex + 1 }}.</div>
+                <div>{{ question.q }}</div>
               </div>
-              <v-radio :class="getCssClass(cIndex, qIndex, 'a')" :label="question.a" value="a"></v-radio>
-              <v-radio :class="getCssClass(cIndex, qIndex, 'b')" :label="question.b" value="b"></v-radio>
-              <v-radio :class="getCssClass(cIndex, qIndex, 'c')" :label="question.c" value="c"></v-radio>
-            </div>
-          </v-radio-group>
+            </v-col>
+            <v-col class="d-flex" :class="getCssClass(cIndex, qIndex, 'a')" cols="12" md="4" lg="3">
+              <v-radio :label="question.a" value="a"></v-radio>
+            </v-col>
+            <v-col class="d-flex" :class="getCssClass(cIndex, qIndex, 'b')" cols="12" md="4" lg="3">
+              <v-radio :label="question.b" value="b"></v-radio>
+            </v-col>
+            <v-col class="d-flex" :class="getCssClass(cIndex, qIndex, 'c')" cols="12" md="4" lg="3">
+              <v-radio :label="question.c" value="c"></v-radio>
+            </v-col>
+          </v-row>
+        </v-radio-group>
+      </v-col>
+      <v-col class="grey lighten-2" cols="12" v-if="doValidate">
+        <div class="d-flex justify-space-around">
+          <strong>Richtig beantwortet: {{result.has(cIndex) ? result.get(cIndex) : 0}}</strong>
+          <strong>Falsch beantwortet: {{ result.has(cIndex) ? 12 - result.get(cIndex) : 12}}</strong>
         </div>
-      </div>
-    </div>
+      </v-col>
+    </v-row>
+
     <v-footer class="px-3" height="50" dark app>
       <div class="title">Verbleibend: {{formateTime()}}</div>
       <v-spacer></v-spacer>
@@ -46,7 +62,7 @@ export default class QuestionExam extends Vue {
   private categories: ICategory[] = [];
   private selections: Map<string, string> = new Map<string, string>();
   private doValidate: boolean = false;
-  private result: Map<number, { correct: number; wrong: number }> = new Map();
+  private result: Map<number, number> = new Map();
   private intervall: number = 0;
 
   public beforeMount() {
@@ -101,15 +117,9 @@ export default class QuestionExam extends Vue {
           this.selections.get(`${c}${q}`) === question.s
         ) {
           if (this.result.has(c)) {
-            this.result.get(c)!.correct++;
+             this.result.set(c, this.result.get(c)! + 1);
           } else {
-            this.result.set(c, { correct: 1, wrong: 0 });
-          }
-        } else {
-          if (this.result.has(c)) {
-            this.result.get(c)!.wrong++;
-          } else {
-            this.result.set(c, { correct: 0, wrong: 1 });
+            this.result.set(c, 1);
           }
         }
       }
@@ -184,19 +194,22 @@ export default class QuestionExam extends Vue {
   width: 100% !important;
 }
 
-.v-radio {
-  margin: 0 !important;
-  padding: 4px !important;
+@media ( min-width: 960px) {
+  .v-input--selection-controls {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 }
 
-.v-input--selection-controls {
-  margin: 0 !important;
-  padding: 0 !important;
+.v-input--radio-group:nth-of-type(odd) {
+  background-color: #eeeeee;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
 }
 </style>
 
 <style scoped>
-.q-items > div {
+/* .q-items > div {
   flex-basis: 25%;
 }
 
@@ -212,5 +225,5 @@ export default class QuestionExam extends Vue {
 
 .aw {
   background-color: #ef9a9a;
-}
+} */
 </style>
