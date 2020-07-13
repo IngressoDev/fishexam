@@ -65,7 +65,7 @@ export default {
   beforeMount: function() {
     axios
       .get(
-        'https://raw.githubusercontent.com/IngressoDev/fishexam/master/data/questions.db'
+        'https://raw.githubusercontent.com/IngressoDev/fishexam/master/data/questions.json'
       )
       .then(response => {
         if (this.$route.name === 'questionstraining') {
