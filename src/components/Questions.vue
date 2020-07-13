@@ -85,7 +85,7 @@ export default {
               ) {
                 questions.push(category.questions[random])
               }
-            } while (questions.length < 12)
+            } while (questions.length < 10)
 
             category.questions = questions
             this.categories.push(category)
