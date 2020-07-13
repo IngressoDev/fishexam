@@ -79,7 +79,7 @@ export default class QuestionExam extends Vue {
               Math.random() * category.questions.length
             );
             category.questions.splice(random, 1);
-          } while (category.questions.length > 12);
+          } while (category.questions.length > 10);
         }
 
         this.categories = categories;
