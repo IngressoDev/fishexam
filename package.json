@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "start": "vue-cli-service serve",
-    "push": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "push": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "gh-pages-deploy": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -31,6 +32,7 @@
     "stylus-loader": "^3.0.1",
     "vue-cli-plugin-vuetify": "^0.4.6",
     "vue-template-compiler": "^2.5.17",
-    "vuetify-loader": "^1.0.5"
+    "vuetify-loader": "^1.0.5",
+    "execa": "latest"
   }
 }
