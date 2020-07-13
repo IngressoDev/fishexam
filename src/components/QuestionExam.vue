@@ -36,7 +36,7 @@
       <v-col class="grey lighten-2" cols="12" v-if="doValidate">
         <div class="d-flex justify-space-around">
           <strong>Richtig beantwortet: {{result.has(cIndex) ? result.get(cIndex) : 0}}</strong>
-          <strong>Falsch beantwortet: {{ result.has(cIndex) ? 12 - result.get(cIndex) : 12}}</strong>
+          <strong>Falsch beantwortet: {{ result.has(cIndex) ? 10 - result.get(cIndex) : 10}}</strong>
         </div>
       </v-col>
     </v-row>
